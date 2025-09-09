@@ -5,7 +5,7 @@ Docker image for running cronjobs, with logging.
 
 ## Example `Dockerfile`:
 
-Dockerfile```
+```Dockerfile
 FROM reg.reaweb.uk/cron
 
 RUN echo "0 21 * * sat,wed root python3 /app/autoBackup.py > /proc/1/fd/1 2>/proc/1/fd/2" > /etc/crontab
